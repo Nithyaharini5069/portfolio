@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nithya Harini R | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+
+      /* background image */
+      background: linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.85)),
+      url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(56,189,248,0.2);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56,189,248,0.5);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-top: 15px;
+      background: linear-gradient(90deg, #38bdf8, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h2 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      color: #94a3b8;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      animation: slideUp 0.8s ease;
+    }
+
+    .section h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.75);
+      padding: 22px;
+      border-radius: 14px;
+      margin-top: 15px;
+      border: 1px solid rgba(56,189,248,0.1);
+      transition: 0.4s;
+      backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      background: rgba(56,189,248,0.15);
+      border: 1px solid rgba(56,189,248,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(2,6,23,0.9);
+      color: #64748b;
+      border-top: 1px solid rgba(56,189,248,0.2);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nithya Harini R</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="profile-img" src="C:\Users\harin\Downloads\myphota (1).jpg" alt="profile" />
+    <h1>Hello, I am Nithya Harini 👋</h1>
+    <h2>I can create clean & mobile friendly websites</h2>
+    <p>Modern UI | Responsive Design | Creative Thinking</p>
+  </section>
+
+  <div class="container">
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I have 1 year of experience in HTML, CSS, Figma, JavaScript,C#,sql. I build clean, mobile-friendly websites and design modern UI layouts, landscape designs, multipage websites and thumbnails with creative thinking.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
+        <span>UI/UX</span>
+        <span>Landscape Design</span>
+        <span>Responsive Websites</span>
+        <span>C#</span>
+          <span>SQL</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Online Shopping E-Commerce</h3>
+        <p>Modern responsive shopping website with clean UI.</p>
+      </div>
+      <div class="card">
+        <h3>Employee Performance Prediction</h3>
+        <p>Data analysis based system.</p>
+      </div>
+      <div class="card">
+        <h3>Hotel Management System</h3>
+        <p>Complete booking management system design.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: inirah444@gmail.com</p>
+      </div>
+         <div class="card">
+        <p>Phone No:8754804126</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Nithya Harini R | Modern UI Portfolio</p>
+  </footer>
+
+</body>
+</html>
